@@ -1,8 +1,28 @@
 aid: omeat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/omeat.png
 name: Omeat
-description: 'Omeat is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Omeat (rebranded as Evergreen Select) is a cultivated-beef company that
+  partners with global meat producers to create price-predictable, industrial-scale
+  beef supply. It produces 100% real beef without antibiotics, hormones, or plant-based
+  fillers, positioning cultivated meat as a practical supplement to conventional supply
+  chains while holding pricing at parity with commodity ground beef. Founded by tissue-engineering
+  researcher Ali Khademhosseini and backed by GV, the company targets restaurants and
+  meat processors seeking supply-chain stability and consistent quality. As of this
+  enrichment pass Omeat operates as a food/biotech producer with a marketing website
+  only: no public API, developer portal, documentation, SDKs, or GitHub organization
+  were found, so there is no machine-readable API surface to catalog. This profile is
+  retained as a company/lead record surfaced from the GV venture portfolio.'
 url: https://raw.githubusercontent.com/api-evangelist/omeat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +30,38 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand:
+  former-name: Omeat
+  current-name: Evergreen Select
+  former-url: https://www.omeat.com
+  current-url: https://www.evergreen.food
+  note: omeat.com issues a 301 redirect to evergreen.food
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Frontier Tech
+- Cultivated Meat
+- Food Technology
+- Biotechnology
+- Agriculture
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/omeat-domain-security.yml
 - type: Website
+  url: https://www.evergreen.food
+- type: Company
   url: https://www.omeat.com
